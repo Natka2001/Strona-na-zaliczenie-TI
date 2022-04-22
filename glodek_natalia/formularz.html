@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" media="screen" href="Styles/style_formularz.css" />
+</head>
+
+<body>
+
+
+
+    <form id="myform" action="/action_page.php">
+         
+        <fieldset style="display: flex; justify-content: center">
+           
+            <h1 id=#formtitule>Formularz</h1>
+           
+        </fieldset>
+             
+
+        <fieldset>
+            <legend>Podaj imię</legend>
+            <input class="text" value="Tutaj wpisz imię">
+        </fieldset>
+
+        <fieldset>
+            <legend>Podaj nazwisko</legend>
+            <input class="text" value="Tutaj wpisz nazwisko">
+        </fieldset>
+
+        <fieldset>
+            <legend>Podaj płeć</legend>
+            <div class=wybor>
+                <input class="plec" type="radio" id="k" name="plec" value="Kobieta">Kobieta
+                <input class="plec" type="radio" id="m" name="plec" value="Mężczyzna">Mężczyzna
+                <input class="plec" type="radio" id="n" name="plec" value="Nie chce podawać">Nie chce podawać
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skąd pochodzisz?</legend>
+            <select>
+                <option id="wies">ze wsi</option>
+                <option id="miasto">z miasta</option>
+                <option id="metropolia">z metropolii</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Wybierz ulubiony kolor</legend>
+            <select size=2>
+                <option id="czarny">czarny</option>
+                <option id="bialy">biały</option>
+                <option id="kolorowy">kolorowy</option>
+                <option id="kazdy">każdy</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Wybierz lubianą literaturę</legend>
+            <div class=wybor>
+                <input type="checkbox" id="fantasy">
+                <label for="fantasy"> Fantasy</label><br>
+                <input type="checkbox" id="kryminal">
+                <label for="kryminal"> Kryminał</label><br>
+                <input type="checkbox" id="piekna">
+                <label for="piekna"> Piękna</label><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Napisz kilka słów o sobie</legend>
+            <textarea class="text" rows="10">Wpisz co tylko chcesz</textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Podsumowanie</legend>
+            <input class=przycisk type="submit" value="Wyślij formularz">
+            <input class=przycisk type="reset" value="Wyczyść dane">
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>

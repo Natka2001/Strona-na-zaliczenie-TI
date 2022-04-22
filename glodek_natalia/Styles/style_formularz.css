@@ -1,0 +1,55 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h1{
+    margin: 0;
+}
+
+fieldset{
+    width: 90%;
+    background-color: #d5cfbd;
+    display: flex;
+    margin: 1%;
+    padding: 1%;
+}
+
+legend{
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    background-color: #766e58;
+    border: dotted white 0.5px;
+    color: white;
+    border-radius: 10px;
+}
+
+select{
+    width: 50%
+}
+
+.text{
+    width: 100%;
+}
+
+#czarny{
+    background-color: black;
+    color: white;
+}
+
+#kolorowy{
+    background: linear-gradient(to right, purple, blue,green,yellow,orange, red)
+}
+
+#kazdy{
+     background: linear-gradient(to right, yellow 50%, blue 50%)
+}
+
+.przycisk{
+    width: 50%;
+    padding: 2%;
+    font-size: large;
+}

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SPA Royal Bird</title>
+    <meta name="author" content="Natalia Głodek">
+    <meta name="keywords" content="hotel, nocleg, spa, odpoczynek, relax" />
+    <meta name="description" content="strona hotelu Royal Bird" />
+    <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="stylesheet" media="screen" href="Styles/styles.css" />
+    <link rel="stylesheet" href="Styles/styl_menu_gorne.css">
+    <link rel="stylesheet" href="Styles/style_formularz.css">
+    <script src="https://kit.fontawesome.com/673cb1935f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+</head>
+
+<body style="margin: 0">
+
+    <!-- nagłowek strony -->
+    <header>
+        <div class=logo>
+            <p>SPA Royal Bird</p>
+            <img src="Images/logo.png" alt="alternative" />
+        </div>
+        <div class=zakladki>
+            <nav class="menu-glowne">
+                <a class="do1" href=#sekcja1><i class="fa-solid fa-child"></i><span class=tekst> Ciało </span></a>
+                <a class="do2" href=#sekcja2><i class="fa-solid fa-hand-holding-droplet"></i><span class=tekst> Dłonie </span></a>
+                <a class="do3" href=#sekcja3><i class="fa-solid fa-shoe-prints"></i><span class=tekst> Stopy </span></a>
+                <a class="do4" href=#sekcja4><i class="fa-solid fa-face-grin-wide"></i><span class=tekst> Twarz </span></a>
+                <a class="do5" href=#sekcja5><i class="fa-solid fa-dollar-sign"></i><span class=tekst> Cennik </span></a>
+                <a href=formularz.html><i class="fa-solid fa-memo-circle-check"></i><span class tekst>Form</span></a>
+            </nav>
+        </div>
+
+
+        <!-- jquery -->
+        <!-- powolne przewijanie -->
+        <script>
+            $(document).ready(function() {
+                $('.do1').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+
+            $(document).ready(function() {
+                $('.do2').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.do3').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.do4').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('.do5').on('click', function(event) {
+
+                    var target = $($(this).attr('href'));
+
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $(window).resize(function() {
+
+                    if ($(this).width() <= 600) {
+
+                        $('.side-menu-container').hide();
+                        $('.menu-glowne').show();
+
+
+                    } else {
+
+                        $('.side-menu-container').show();
+
+                    }
+
+                });
+            });
+
+        </script>
+    </header>
+
+    <!-- menu boczne -->
+    <div class="side-menu-container">
+        <nav class="side-menu">
+            <a class="do1" href=#sekcja1>
+                <div><i class="fa-solid fa-child"></i></div>
+            </a>
+            <a class="do2" href=#sekcja2>
+                <div><i class="fa-solid fa-hand-holding-droplet"></i></div>
+            </a>
+            <a class="do3" href=#sekcja3>
+                <div><i class="fa-solid fa-shoe-prints"></i></div>
+            </a>
+            <a class="do4" href=#sekcja4>
+                <div><i class="fa-solid fa-face-grin-wide"></i></div>
+            </a>
+            <a class="do5" href=#sekcja5>
+                <div><i class="fa-solid fa-dollar-sign"></i></div>
+            </a>
+        </nav>
+    </div>
+
+
+    <!-- landing page -->
+    <div class=landing>
+        <img class=logo_land id="d1" src="Images/logo.png">
+        <span class=nazwa1>SPA Royal Bird</span>
+        <div class=ikonki>
+            <div class=obramowka1>
+                <div class=ikonka><i class="fa-solid fa-spa"></i>relax</div>
+            </div>
+            <div class=obramowka1>
+                <div class=ikonka><i class="fa-solid fa-hand-sparkles"></i>chill</div>
+            </div>
+            <div class=obramowka1>
+                <div class=ikonka><i class="fa-solid fa-face-laugh-beam"></i>have fun</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- glowny pojemnik -->
+    <div class="container-main container">
+        <div class="container" id="sekcja1">
+            <div class=picturetext>
+                <div class="txt-obok">
+                    <h2>Całe ciało</h2>
+                    <p>Phasellus a enim nibh. Ut nec eleifend ipsum, et commodo quam. <b>Sed sedn ut tempus sapien. </b>Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor a odio non orci\</p>
+                    <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+
+                    <ul>
+                        <li>Balijski masaż twarzy</li>
+                        <li>Kobido</li>
+                        <li>Masaż Aromaterapeutyczny</li>
+                        <li>Masaż Gorącymi Kamieniami</li>
+                        <li>Balijski Masaż Pleców, Ramion i Karku</li>
+                    </ul>
+
+                </div>
+                <div class=pictureslink>
+                    <div class=pictures><img src=https://bit.ly/3pMdFxv alt=ciało></div>
+                    <div class="link"><a href="https://bit.ly/3pMdFxv">zdjęcie 1</a></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div class="container" id="sekcja2">
+            <div class=picturetext>
+                <div class="txt-obok">
+                    <h2>Dłonie</h2>
+                    <p>In ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum.</p>
+                    <p>In ut tempus sapien. Duis at sapien arcu. asellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum.</p>
+                    <ol>
+                        <li>Manicure klasyczny</li>
+                        <li>Manicure hybrydowy</li>
+                        <li>Zabieg spa na dłonie</li>
+                        <li>Parafinowa kąpiel dłoni</li>
+                    </ol>
+                </div>
+                <div class="pictureslink">
+                    <div class="pictures">
+                        <img src=https://bit.ly/3vHkxQt alt=dłonie>
+                    </div>
+                    <div class=link><a href="https://bit.ly/3vHkxQt">zdjęcie 2</a></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div class="container" id="sekcja3">
+            <div class="txt-srodek">
+                <h2>Stopy</h2>
+                <p>In ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus <b>vel sagittis.</b> Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum.</p>
+                <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+                <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+
+                <p>In ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus <b>vel sagittis.</b> Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum.</p>
+                <ul>
+                    <li>Pedicure klasyczny</li>
+                    <li>Pedicure hybrydowy</li>
+                    <li>Masaż stóp</li>
+                </ul>
+            </div>
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img class=zdj_slider src="Images/img1.jpg" style="width:100%">
+    <div class="text"><a>https://bit.ly/3v2sAXf</a></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img  class=zdj_slider src="Images/img2.jpg" style="width:100%">
+    <div class="text"><a>https://bit.ly/3k1dkDR</a></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img  class=zdj_slider src="Images/img3.jpg" style="width:100%">
+    <div class="text"><a>https://bit.ly/3xKKEa2</a></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+        </div>
+        
+        
+        <script>let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
+        <hr style="margin-top: 3%;">
+        <div class="container" id="sekcja4">
+            <div class=txt-srodek>
+                <h2>Zabiegi na twarz</h2>
+                <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+                <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+                <p>varius, vulputate pellentesque mi interdum.n ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus vel sagittis. Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum. placerat ligula. Ut a mi at urna accumsan condimentum vel ut ex. Fusce id pretium enim.</p>
+                <p style="margin-bottom: 5%;">In ut tempus sapien. Duis at sapien arcu. Phasellus tempor at eros ac porta. Nullam lacinia ornare purus <b>vel sagittis.</b> Quisque porta magna sed tortor sagittis consectetur. Maecenas velit turpis, rutrum at pulvinar quis, euismod id risus. Etiam fringilla odio non orci varius, vulputate pellentesque mi interdum.\</p>
+                <div class=listy>
+
+                    <div class="lista1">
+                        <ul>
+                            <li>Laminacja brwi</li>
+                            <li>Regulacja brwi</li>
+                            <li>Henna brwi</li>
+                        </ul>
+                    </div>
+
+                    <div class="lista2">
+                        <ul>
+                            <li>Laminacja rzęs</li>
+                            <li>Henna rzęs</li>
+                            <li>Uzupełnienie rzęs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container" id="sekcja5">
+            <div class="txt-srodek">
+                <h2>Cennik</h2>
+                <h3>DŁONIE:</h3>
+
+                <table>
+                    <tr>
+                        <th>Usługa</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td>Manicure klasyczny</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Manicure hybrydowy</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Zabieg spa na dłonie</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Parafinowa kąpiel dłoni</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+
+                <h3>STOPY:</h3>
+                <table>
+                    <tr>
+                        <th>Usługa</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td>Pedicure klasyczny</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Pedicure hybrydowy</td>
+                        <td>140</td>
+                    </tr>
+                    <tr>
+                        <td>Masaż stóp</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer> Natalia Głodek, 2022 &copy <div id="zegar"></div>
+    </footer>
+    <script>
+        function getTime() {
+            return (new Date()).toLocaleTimeString();
+        }
+        document.getElementById('zegar').innerHTML = getTime();
+        setInterval(function() {
+
+            document.getElementById('zegar').innerHTML = getTime();
+
+        }, 1000);
+
+    </script>
+
+
+</body>
+
+</html>
