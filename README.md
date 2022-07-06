@@ -1,3 +1,3 @@
-# Strona-na-zaliczenie-TI
+# Frontend strony hotelu
 
 Autor: Natalia Głodek
